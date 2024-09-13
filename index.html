@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!---------------------- Font link --------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umm-e-Hani's Editable Resume</title>
+</head>
+<body>    
+    <div class="dynamic-resume">
+        <h1>Milestone 4: Editable Resume  </h1>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <h2>Education</h2>
+            <label for="degree">Degree:
+                <input type="text" id="degree" placeholder="Enter your Degree" required><br><br>
+            </label>
+            <label for="institution">Institution:
+                <input type="text" id="institution" placeholder="Enter your School or University:" required><br><br>
+            </label>
+            <label for="graduation-year">Graduation Year:
+                <input type="date" id="graduationYear" placeholder="Enter your Graduation year"><br>
+            </label>
+
+            <h2>Skills</h2>
+            <label>Skills:
+                <textarea id="skills" placeholder="Enter your Skills" required></textarea>
+            </label>
+
+            <h2>Work Experience</h2>
+            <label>Work Experience:
+                <textarea id="workExperience" placeholder="Enter your Work Experience" required></textarea>
+            </label>
+
+            <button type="submit" id="generate-resume">Generate Resume</button>
+            
+        </form>
+    </div>      
+
+    <div id="resume-output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
